@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1"
+        name="viewport" />
+  <title class="animate-title">NMBA</title>
+  <style>
+  @keyframes moveSideToSide {
+    0% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+  .animate-title {
+    display: inline-block;
+    position: relative;
+    animation-duration: 3s;
+    animation-name: moveSideToSide;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+    color: #00ff9b;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #00ff9b;
+    font-size: 55px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial", sans-serif;
+    transform: rotate(0deg);
+    animation-delay: 0.5s;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .animate-title.show {
+    opacity: 1;
+  }
+
+  .iframe-container {
+    position: relative;
+    padding: 50px; /* Adjusted padding for more space */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Increased space between iframes */
+  }
+
+  .iframe-container::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("ONESHOT2.jpeg");
+    z-index: -1;
+  }
+  .iframe-container iframe {
+    border: 5px solid #ae00ff; /* Enhanced border style */
+    box-shadow: 0 14px 18px rgba(9, 255, 0, 0.7); /* Enhanced shadow effect */
+    border-radius: 12px; /* Increased rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+
+  .iframe-container iframe:hover {
+    transform: scale(1.55); /* Slightly enlarge on hover */
+    box-shadow: 0 20px 55px rgba(0, 241, 32, 0.9); /* Enhanced shadow on hover */
+    border-color: #07ff28; /* Enhanced border color on hover */
+    border-width: 10px; /* Increased border width on hover */
+    border-style: double;
+    scrollbar-color: rgb(92, 252, 0);
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+  }
+
+  .song-list {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(112, 7, 250, 0.945);
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgb(243, 187, 4);
+  }
+
+  .song-list h2 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial", sans-serif;
+    color: #0cff0c;
+    text-align: center;
+  }
+
+  .song-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .song-list li {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: #00fd54;
+    padding: 10px 0;
+    border-bottom: 3px solid #e800f0;
+    display: flex;
+    align-items: center;
+  }
+
+  .song-list li img {
+    margin-right: 10px;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .song-list li:last-child {
+    border-bottom: none;
+  }
+  .song-title {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial", sans-serif;
+    color: #0cff0c;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    border-block: ;
+    backface-visibility: visible;
+    background-color: #ff0b0b;
+    scrollbar-color: rgb(1, 255, 1);
+  }
+  </style>
+  <div class="iframe-container">
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="215"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/UZpBM2UYJ_0?si=_VqAgNr1DtUxMvlz"
+            title="YouTube video player"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="225"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/T6WwO4aKQFw"
+            title="&quot;DONE PLAYIN&quot; --N-M-B-A-- --CRIMSON REEDDD--"
+            width="220">
+      src
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="243"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/lOx1IpMjSMg"
+            title="LUCAS JOYNER IS A JOKE NMBA COOKED HIM"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/cBAH2VkUwxs"
+            title="&quot;sad night&quot; n-m-b-a"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/NfbtNlo9pps"
+            title="&quot;NMBA&quot; N-M-B-A"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/l3p0_mKchnw"
+            title="&quot;GETTIN IT&quot;"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/dDtYEKQ2p4U"
+            title="&quot;a dent in my soul&quot;--nmba--"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/PgZtv9k3XIc"
+            title="&quot;LOYALTY IS MY GIRL&quot;"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/zi6kvpLhHy4"
+            title="&quot;TUITION&quot;"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/hvvioRQrowM"
+            title="&quot;MISSED CALL FROM GOD&quot;--NMBA--CRIMSON_REDSTA414"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/WXUNKhVVe_I"
+            title="alphabet one night stands"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/WcePsmudKNk"
+            title="TRY ME -NMBA"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/0_q5O5Q72X0?list=RDMM"
+            title="queen of the night"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/QNpbZL2KCdU?list=RDMM"
+            title="be there"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/llud-M2v_Uw?list=RDMM"
+            title="cooked Lucas joynar again shady diss  --nmba--"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/ud7aO1SbagY?list=RDMM"
+            title="&quot;BAD GUY&#39;S VILIAN&quot; N-M-B-A"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            frameborder="0"
+            height="223"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/mzHDD-j9NIM?list=RDMM"
+            title="THE END   SYMPHONY OF LIFE"
+            width="220">
+    </iframe>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        frameborder="0"
+        height="838"
+        referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.youtube.com/embed/iFPup8JRTMM"
+        title="How Lil Durk saved King Von from Life in Prison.. 👀😳"
+        width="471">
+</iframe>
+
+  </div>
+
+  <div class="song-list">
+    <h2>N-M-B-A SONG LIST</h2>
+    <ul>
+      <li>
+        <img alt="DONE PLAYIN"
+             src="NMBA-USE2.jpg" />
+        <span class="song-title"
+              data-video-url="video1.mp4">
+          1. DONE PLAYIN --N-M-B-A-- --CRIMSON REEDDD--
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="LUCAS JOYNER IS A JOKE"
+             src="./NMBA-NEWLOGO.jpg" />
+        <span class="song-title"
+              data-video-url="video2.mp4">
+          2. LUCAS JOYNER IS A JOKE NMBA COOKED HIM
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="sad night"
+             src="NMBA2.jpg" />
+        <span class="song-title"
+              data-video-url="video3.mp4">
+          3. sad night n-m-b-a
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="NMBA"
+             src="NMBA-USE2.jpg" />
+        <span class="song-title"
+              data-video-url="video4.mp4">
+          4. NMBA N-M-B-A
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="GETTIN IT"
+             src="./NMBA2.jpg" />
+        <span class="song-title"
+              data-video-url="video5.mp4">
+          5. GETTIN IT
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="a dent in my soul"
+             src="ONESHOTONECHANCE.jpeg" />
+        <span class="song-title"
+              data-video-url="video6.mp4">
+          6. a dent in my soul--nmba--
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="LOYALTY IS MY GIRL"
+             src="ONESHOTPERF.jpeg" />
+        <span class="song-title"
+              data-video-url="video7.mp4">
+          7. LOYALTY IS MY GIRL
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="TUITION"
+             src="ONESHOTONECHANCE.jpeg" />
+        <span class="song-title"
+              data-video-url="video8.mp4">
+          8. TUITION
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="MISSED CALL FROM GOD"
+             src="NMBALOGO.jpg" />
+        <span class="song-title"
+              data-video-url="video9.mp4">
+          9. MISSED CALL FROM GOD--NMBA--CRIMSON_REDSTA414
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="alphabet one night stands"
+             src="ONESHOT2.jpeg" />
+        <span class="song-title"
+              data-video-url="https://www.youtube.com/embed/WXUNKhVVe_I">
+          10. alphabet one night stands
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+      <li>
+        <img alt="play"
+             src="NMBALOGO.jpg" />
+        <span class="song-title"
+              data-video-url="https://www.youtube.com/embed/0B5rZU6j3TQ">
+          11. the end
+        </span>
+        <img alt="Play"
+             class="play-icon"
+             src="play-icon.png" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  let currentVideoIndex = 0;
+  const songTitles = document.querySelectorAll(".song-title");
+  const videoPlayer = document.getElementById("videoPlayer");
+  const videoSource = document.getElementById("videoSource");
+
+  function playVideo(index) {
+    const videoUrl = songTitles[index].getAttribute("data-video-url");
+    videoSource.src = videoUrl;
+    videoPlayer.style.display = "block";
+    videoPlayer.load();
+    videoPlayer.play();
+    highlightCurrentVideo(index);
+  }
+
+  function highlightCurrentVideo(index) {
+    songTitles.forEach((title, i) => {
+      if (i === index) {
+        title.style.backgroundColor = "yellow";
+      } else {
+        title.style.backgroundColor = "";
+      }
+    });
+  }
+
+  document.addEventListener("keydown", event => {
+    switch (event.key) {
+      case "ArrowRight":
+        currentVideoIndex = (currentVideoIndex + 1) % songTitles.length;
+        playVideo(currentVideoIndex);
+        break;
+      case "ArrowUp":
+        currentVideoIndex = (currentVideoIndex - 1 + songTitles.length) % songTitles.length;
+        highlightCurrentVideo(currentVideoIndex);
+        break;
+      case "ArrowDown":
+        currentVideoIndex = (currentVideoIndex + 1) % songTitles.length;
+        highlightCurrentVideo(currentVideoIndex);
+        break;
+      case " ":
+        if (videoPlayer.paused) {
+          videoPlayer.play();
+        } else {
+          videoPlayer.pause();
+        }
+        break;
+    }
+  });
+
+  // Initial play
+  playVideo(currentVideoIndex);
+  </script>
+</head>
+</html>
